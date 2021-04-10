@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/common.css">
+    <script src="scripts/Common.js"></script>
+
+</head>
+<body>
+<div class="header">
+
+    <div><a href="#default" class="logo" width="10%" height="10%">Scribbler</a></div>
+    <div class="header-right">
+        <a href="" class="btn btn-primary" id ="login" data-toggle="modal" data-target="#modalContactForm">Login</a>
+        <a href="" class="btn btn-primary" id="signup" data-toggle="modal" data-target="#modalContactForm2">Signup</a>
+
+</div>
+<div><a href="#default" class="subhead" width="10%" height="10%">Explore, Imagine, Create</a></div>
+    <div class="text-center">
+
+
+    </div>
+    <div class="modal fade" id="modalContactForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <span class="modal-title w-100 font-weight-bold">Get Started</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div>
+                        <br>
+                        <label for="Name">Name</label><br>
+                        <input type="text" id="Name" placeholder="Enter your Name"name="Name"><br>
+                        <label for="Username">Username</label><br>
+                        <input type="text" id="Username" placeholder="Enter your UserName"name="Username"><br>
+                        <label for="Password">Password</label><br>
+                        <input type="text" id="Password" placeholder="Enter your Password"name="Password"><br>
+                        <label for="Confirm">Confirm Password</label><br>
+                        <input type="text" id="Confirm" placeholder="Reenter your password"name="Confirm"><br>
+                        <button id="signupform">Signup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+
+    </div>
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <span class="modal-title w-100 font-weight-bold">Welcome Back</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body mx-3">
+                    <div>
+                        <br>
+                        <label for="Username">Username</label><br>
+                        <input type="text" id="Username" placeholder="Enter your UserName" name="Username"><br>
+                        <label for="Password">Password</label><br>
+                        <input type="text" id="Password" placeholder="Enter your Password"name="Password"><br>
+                        <button id="signupform">Sign in</button><br><br><br>
+                        <span>Not a member?<button class="button" id="abc">signup</button><span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalContactForm3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <span class="modal-title w-100 font-weight-bold">Pen your Post</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body mx-3">
+                    <div>
+                        <br>
+                        <label for="Username">Title</label><br>
+                        <input type="text" id="Username" placeholder="Enter title" name="Username"><br>
+                        <label for="Password">Contents</label><br>
+                        <input type="text" id="Password" placeholder="Enter the contents of your post" name="Password"><br>
+                        <button id="createpost">Create Post</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <button id="AllPosts">All Posts</button>
+
+    <button type="button" class="btn btn-primary" id ="Create" data-toggle="modal" data-target="#modalContactForm3">CreatePosts</button>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

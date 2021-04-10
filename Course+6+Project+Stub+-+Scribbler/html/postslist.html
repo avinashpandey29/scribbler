@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/postlists.css">
+    <script src="../scripts/postlist.js"></script>
+
+</head>
+<body>
+<div class="header">
+
+    <div><a href="#default" class="logo" width="10%" height="10%">Scribbler</a></div>
+    <div class="header-right">
+        <a href="" class="btn btn-primary" id ="login" data-toggle="modal" data-target="#modalContactForm">Login</a>
+        <a href="" class="btn btn-primary" id="signup" data-toggle="modal" data-target="#modalContactForm2">Signup</a>
+
+    </div>
+    <div><a href="#default" class="subhead" width="10%" height="10%">Explore, Imagine, Create</a></div>
+    <div class="text-center">
+
+
+    </div>
+    <div class="modal fade" id="modalContactForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Get Started</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div>
+                        <label for="Name">Name</label><br>
+                        <input type="text" id="Name" name="Name"><br>
+                        <label for="Username">Username</label><br>
+                        <input type="text" id="Username" name="Username"><br>
+                        <label for="Password">Password</label><br>
+                        <input type="text" id="Password" name="Password"><br>
+                        <label for="Confirm">Confirm Password</label><br>
+                        <input type="text" id="Confirm" name="Confirm"><br>
+                        <button id="signupform">Signup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+
+    </div>
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Welcome Back</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body mx-3">
+                    <div>
+                        <label for="Username">Username</label><br>
+                        <input type="text" id="Username" name="Username"><br>
+                        <label for="Password">Password</label><br>
+                        <input type="text" id="Password" name="Password"><br>
+                        <button id="signupform">Sign in</button>
+                        <p>Not a member?sign In</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalContactForm3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Pen your Post</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body mx-3">
+                    <div>
+                        <label for="Username">Title</label><br>
+                        <input type="text" id="Username" name="Username"><br>
+                        <label for="Password">Contents</label><br>
+                        <input type="text" id="Password" name="Password"><br>
+                        <button id="createpost">Create Post</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="row">
+    <div class="card col-md-6" id ="five"style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-3">
+                <p>Srishti Gupta</p>
+            </div>
+            <div class="col-md-9" id="cardbody">
+                <div class="row" id="closetrash">
+                    <button onClick = "GFG_Fun()" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h5>
+                    <p class="card-text">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card col-md-6" id ="four" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-3">
+                <p>Colby Fayock</p>
+            </div>
+            <div class="col-md-9" id="cardbody">
+                <div class="row" id="closetrash">
+                    <button onClick = "GFG_Fun()" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">What is linting and how can it save you time?</h5>
+                    <p class="card-text">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.Though all the three keywords are used for the same purpose, they are di</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-4" id ="three" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-3">
+                <p>Cedd Burge</p>
+            </div>
+            <div class="col-md-9" id="cardbody">
+                <div class="row" id="closetrash">
+                    <button onClick = "GFG_Fun()" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">How to write easily describable code</h5>
+                    <p class="card-text">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                        leads to confusion when discussing the code.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card col-md-6" id ="two" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-3">
+                <p>azeed Bzadough</p>
+            </div>
+            <div class="col-md-9" id="cardbody">
+                <div class="row" id="closetrash">
+                    <button onClick = "GFG_Fun()"class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">How to Get More Views on Your Tech Blog</h5>
+                    <p class="card-text">If you're a developer with a  are used for the same diThough all the three keywords are used for the same purpose, they are di you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card col-md-6" id ="one" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-3">
+                <p>Yazeed Bzadough</p>
+            </div>
+            <div class="col-md-9" id="cardbody">
+                <div class="row" id="closetrash">
+                    <button onClick = "GFG_Fun()" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">How to write easily describable code</h5>
+                    <p class="card-text">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var div = document.getElementById('one');
+    var div = document.getElementById('two');
+    var div = document.getElementById('three');
+    var div = document.getElementById('four');
+    var div = document.getElementById('five');
+    function GFG_Fun() {
+        div.remove();
+        down.innerHTML = "Element is removed.";
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

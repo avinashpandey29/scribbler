@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/posts.css">
+    <script src="../scripts/post.js"></script>
+
+</head>
+<body>
+<div class="header">
+
+    <div><a href="#default" class="logo" width="10%" height="10%">Scribbler</a></div>
+    <div class="header-right">
+        <a href="" class="btn btn-primary" id ="login" data-toggle="modal" data-target="#modalContactForm">Login</a>
+        <a href="" class="btn btn-primary" id="signup" data-toggle="modal" data-target="#modalContactForm2">Signup</a>
+
+    </div>
+    <div><a href="#default" class="subhead" width="10%" height="10%">Explore, Imagine, Create</a></div>
+    <div class="text-center">
+
+
+    </div>
+    <div class="modal fade" id="modalContactForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Get Started</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div>
+                        <label for="Name">Name</label><br>
+                        <input type="text" id="Name" name="Name"><br>
+                        <label for="Username">Username</label><br>
+                        <input type="text" id="Username" name="Username"><br>
+                        <label for="Password">Password</label><br>
+                        <input type="text" id="Password" name="Password"><br>
+                        <label for="Confirm">Confirm Password</label><br>
+                        <input type="text" id="Confirm" name="Confirm"><br>
+                        <button id="signupform">Signup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+
+    </div>
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Welcome Back</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body mx-3">
+                    <div>
+                        <label for="Username">Username</label><br>
+                        <input type="text" id="Username" name="Username"><br>
+                        <label for="Password">Password</label><br>
+                        <input type="text" id="Password" name="Password"><br>
+                        <button id="signupform">Sign in</button>
+                        <p>Not a member?sign In</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalContactForm3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <span class="modal-title w-100 font-weight-bold">Pen your Post</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body mx-3">
+                    <div>
+                        <br>
+                        <label for="Username">Title</label><br>
+                        <input type="text" id="Username" name="Username"><br>
+                        <label for="Password">Contents</label><br>
+                        <input type="text" id="Password" name="Password"><br>
+                        <button id="createpost">Create Post</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<p id="heading"><b>Everything you should know about module and node js</b></p>
+<div>
+    <div class="row">
+
+    <div class="col-md-10">Shrishti Gupta</div>
+
+    <div class="col-md-2"><button onClick = "GFG_Fun()" id=""class="btn btn-info btn-danger" >Edit
+        <span class="glyphicon glyphicon-edit"></span>
+    </button></div>
+     </div>
+
+    <p id="hello">As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep. </p>
+
+    <div class="col-md-2" id="mylike"><button onClick = "like()" class="btn btn-info btn-danger" ><span class="glyphicon glyphicon-thumbs-up"></span>Like
+    </button>
+        <p>Be the first one to like this</p>
+    </div>
+    <br><br><br><br>
+    <div>
+        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+        <div  id="comment"><button onClick = "comment()" class="btn btn-info btn-danger" >Comment
+        </button>
+
+    </div>
+
+        <div>
+            <h4>All comments</h4>
+            <div id="allcomment"></div>
+
+        </div>
+</div>
+
+<script>
+    var count=0;
+        function GFG_Fun() {
+            var x = document.getElementById("hello").textContent
+            var data = "<textarea id=\"textArea\">\n" +
+                "  computer      " +
+                "    </textarea>";
+
+            document.getElementById("hello").innerHTML =data;
+            document.getElementById("hello").innerHTML +=
+                "<br><input type=\"button\" id=\"signupformone\"value=\"Save\" onclick=\"save()\"/>";
+
+            var m = document.getElementById('textArea');
+            m.value = x;
+
+
+
+        }
+
+    function saveEdits() {
+
+//get the editable element
+        var editElem = document.getElementById("edit");
+
+//get the edited element content
+        var userVersion = editElem.innerHTML;
+
+//save the content to local storage
+        localStorage.userEdits = userVersion;
+
+//write a confirmation to the user
+        document.getElementById("update").innerHTML="Edits saved!";
+
+    }
+    function save () {
+        var p = document.getElementById("textArea").value;
+        document.getElementById("hello").innerHTML+=p;
+        var k = document.getElementById("signupformone");
+        k.remove();
+        var m = document.getElementById("textArea");
+        m.remove();
+
+    }
+        function like () {
+            count= count+1;
+            if (count == 1) {
+                var p = "<div class=\"col-md-2\" id=\"mylike\"><button onClick = \"like()\" id=\"qwe\"class=\"btn btn-info btn-danger\" ><span class=\"glyphicon glyphicon-thumbs-up\"></span>Liked\n" +
+                    "\n" +
+                    "    </button></div>";
+                document.getElementById("mylike").innerHTML = p;
+                document.getElementById("mylike").innerHTML+="<br><br><p>1 person like this</p>";
+            }
+
+        }
+        function comment() {
+            var p = document.getElementById("w3review").value;
+            document.getElementById("allcomment").innerHTML+=p;
+
+
+        }
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
